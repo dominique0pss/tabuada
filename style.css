@@ -1,0 +1,189 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+body{
+   background-image: url(https://cdn.pixabay.com/photo/2019/09/25/10/29/color-4503279_1280.jpg);
+   background-size: cover;
+}
+
+h2{
+    cursor:wait ;
+    color: aliceblue;
+    font-size: 2em;
+    letter-spacing: 5px;
+    
+}
+
+
+#container::after{
+    content: "";
+    left: 0;
+    width: 5%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    animation: nt .50s linear infinite alternate-reverse;
+
+}
+
+@keyframes nt {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(50%);
+    }
+}
+
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    flex-direction: column;
+    position: relative;
+    
+    
+    
+    
+}
+
+#tabuada{
+    color: aliceblue;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.308);
+    font-size: 1.1rem;
+}
+
+#tabuada:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+    cursor: pointer;
+}
+
+#tabuada h3{
+    color: white;
+}
+
+::placeholder{
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+input{
+    cursor: cell;
+    font-size: 1.0rem;
+    transition: 2s;
+    background-image: linear-gradient(to left, black, rgb(54, 54, 54), rgb(122, 121, 121), rgb(209, 204, 204));
+    margin: 20px;
+    color: aliceblue;
+    
+                
+}
+
+input:hover{
+    font-size: 1.0rem;
+}
+
+button{
+    cursor: grab;
+    background-color: rgba(165, 42, 42, 0);
+    border: none;
+    box-shadow: 5px 0px 50px rgb(7, 7, 7),
+     5px 0px 50px rgb(7, 7, 7);
+    
+    margin: 10px;
+    display: flex;
+    font-size: 1.2rem;
+    position: relative;
+    color: aliceblue;
+
+    
+}
+
+button::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transition: 1s;
+}
+
+button:hover::after{
+width: 100%;
+
+}
+
+.tds{
+    margin-right:2em ;
+    margin-left: 0;
+    background-color: aqua;
+    
+}
+
+.tds img{
+    height: 150px;
+    margin-top: 16em;
+    position: absolute;
+    animation: dsl 3s linear infinite alternate-reverse;
+   
+   
+    display: flex;
+}
+
+.tds .img1{
+margin-left: 0em;
+}
+.tds .img2{
+margin-left: 10em;
+}
+.tds .img3{
+margin-left: 20em;
+}
+
+.tds .imgbv{
+    margin-left: 31em;
+}
+
+.tds .img5{
+margin-left: 50em;
+}
+.tds .img6{
+margin-left: 60em;
+}
+.tds .img7{
+margin-left: 70em;
+}
+
+
+
+
+@keyframes dsl {
+
+0%{
+    transform: translateX(0%);
+}
+100%{
+    transform: translateX(8%);
+}
+    
+}
